@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemple de formulaire</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form action="./" method="get">
+      <label for="nom">Nom: </label>
+      <input type="text" name="nom" id="nom" /><br />
+      <label for="prenom">Prenom: </label>
+      <input type="text" name="prenom" id="prenom" value="Marie" /><br />
+      <label for="date_naiss">Date de naissance</label>
+      <input type="date" name="date_naissance" id="date_naiss" /><br />
+      <label for="age">Votre age:</label>
+      <input type="number" name="age" id="age" /><br />
+      <label for="courriel">Cotre courriel:</label>
+      <input
+        type="email"
+        name="courriel"
+        id="courriel"
+        placeholder="toto@tata.com"
+      /><br />
+      <label for="mot_passe">Votre mot de passe:</label>
+      <input type="password" name="mot_passe" id="mot_passe" /><br />
+
+      <input type="radio" name="statut" id="statut_etudiant" value="etudiant" />
+      <label for="statut_etudiant">Etudiant-e</label><br />
+
+      <input
+        type="radio"
+        name="statut"
+        id="statut_chercheur"
+        value="chercheur"
+      />
+      <label for="statut_chercheur">Chercheur-e</label><br />
+
+      <input
+        type="radio"
+        name="statut"
+        id="statut_professeur"
+        value="professeur"
+      />
+      <label for="statut_professeur">Professeur-e</label><br />
+
+      <input type="checkbox" name="approuver" id="approuver" checked />
+      <label for="approuver">J'accepte les conditions d'utilisation</label>
+      <br />
+      <input type="button" value="Cliquez ici!" />
+    </form>
+  </body>
+</html>
