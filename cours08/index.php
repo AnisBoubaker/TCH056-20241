@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,17 +23,18 @@
         <h2 class="demo">Titre de l'article 1</h2>
         <p>
           Ceci est le contenu de l'article 1 tel que décrit sur le site
-          <a href="https://www.etsmtl.ca">ETS</a>
         </p>
       </article>
-      <article id="article2">
-        <h2>Titre de l'article 2</h2>
-        <p class="a b c d demo important">Contenu de l'article 2...</p>
-      </article>
-      <article id="article3">
-        <h2>Titre de l'article 3</h2>
-        <p class="demo">Contenu de l'article 3...</p>
-      </article>
+      <?php
+        for($i =0 ; $i < 10; $i++)
+        {
+          echo "<article id='article".$i."'>";
+          echo "<h2>Nouvel article num.".$i."</h2>";
+          echo "<p>Ceci est un paragraphe generé</p>";
+          echo "</article>";
+        }
+
+      ?>+
     </main>
     <aside>
       <h3>Informations supplémentaires</h3>

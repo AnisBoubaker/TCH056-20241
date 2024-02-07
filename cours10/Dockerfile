@@ -15,6 +15,9 @@ COPY ./conf/js-no-cache.conf /etc/apache2/conf-available/js-no-cache.conf
 # Enable the new configuration
 RUN a2enconf js-no-cache
 
+# Enable mod_rewrite
+RUN a2enmod rewrite
+
 # Copy application source
 COPY . /var/www/html/
 

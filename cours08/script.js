@@ -31,4 +31,8 @@ const ajouterArticle = function(id, titre, contenu){
     parent.appendChild(nouvelArticle);
 }
 
-ajouterArticle(10, 'Bonjour', 'Ceci est article 10');
+
+//document.addEventListener('DOMContentLoaded', () => {
+    ajouterArticle(10, 'Bonjour', 'Ceci est article 10');
+//})
+

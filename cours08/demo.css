@@ -1,0 +1,20 @@
+table{
+    border-spacing: 0;
+}
+
+tr td{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+}
+
+tr td{
+    background-color: white;
+    color:black;
+}
+
+tr td.gris{
+    background-color: grey;
+    color: white;
+}
+

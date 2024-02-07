@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Condition pour ignorer les fichiers et dossiers réels (ne pas les rediriger)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rediriger toutes les requêtes vers /api/api.php, sans changer l'URL dans la barre d'adresse
+RewriteRule ^api/(.*)$ api/router.php [QSA,L]
